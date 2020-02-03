@@ -1,0 +1,137 @@
+h1{
+	font-size: 50px;
+}
+
+.logo img{
+	width: 100px;
+	height: 100px;
+}
+
+body{
+	font-family: Arial, Helvetica, sans-serif;
+    background-image: url('lightblue3.JPG');
+	  background-repeat: no-repeat;
+	  background-size: cover;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+
+.sidebar {
+  height: 100%;
+  width: 160px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-image:  url('lightblue.JPG');
+  overflow-x: hidden;
+  padding-top: 16px;
+}
+
+.sidebar a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 20px;
+  color: black;
+  display: block;
+}
+
+.sidebar a:hover {
+  color: #f1f1f1;
+}
+
+.sidebar input[type=text] {
+    padding: 6px;
+	margin-top: 8px;
+	font-size: 17px;
+	border: none;
+  }
+}
+
+.main {
+  margin-left: 160px;
+  font-size: 28px;
+  padding: 0px 10px;
+}
+
+.column {
+  float: left;
+  width: 50%;
+  padding: 10px;
+  height: 300px; /* Should be removed. Only for demonstration */
+}
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+}
+
+@media screen and (max-height: 450px) {
+  .sidebar {padding-top: 15px;}
+  .sidebar a {font-size: 18px;}
+  .sidebar .search-container{
+  	float: none;
+  }
+	.sidebar a, .sidebar input[type=text], .sidebar .search-container button {
+   	 float: none;
+   	 display: block;
+   	 text-align: left;
+   	 width: 50%;
+  	 margin: 0;
+     padding: 14px;
+   }
+    .sidebar input[type=text] {
+    border: 1px solid #ccc;  
+   }
+}
+
+#mySearch {
+  width: 50%;
+  font-size: 18px;
+  padding: 6px 8px 6px 16px;
+  border: 1px solid #ddd;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 300px;
+  margin: auto;
+  text-align: center;
+  font-family: arial;
+}
+
+.title {
+  color: black;
+  font-size: 18px;
+}
+
+button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+}
+
+a {
+  text-decoration: none;
+  font-size: 22px;
+  color: black;
+}
+
+button:hover, a:hover {
+  opacity: 0.7;
+}
