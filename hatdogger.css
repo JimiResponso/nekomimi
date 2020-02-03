@@ -1,0 +1,117 @@
+body{
+	font: 15px/1.5 Arial, Helvetica,sans-serif;
+  padding:0;
+  margin:0;
+  background:#35424a;
+}
+ul{
+  margin:0;
+  padding:0;
+  list-style-type: none;
+}
+header{
+  background:#1a8cff;
+  color:#ffffff;
+  padding-top:30px;
+  min-height:70px;
+  width:150%;
+}
+#branding img{
+ float:left;
+ margin-left:50px; 
+  width:150px;
+
+}
+
+#branding .logoid{
+	float:left;
+	padding:10px;
+	margin-top:175px;
+	margin-left:10px;
+	position: fixed;
+}
+#nav{
+
+	float:left;
+	padding:10px;
+}
+#nav{
+  margin-top:300px;
+
+  padding: 20px;
+  width: 125px;
+  height: 100%; /* Full height */
+  position: fixed; /* Make it stick, even on scroll */
+  overflow: auto; /* Enable scrolling if the sidenav has too much content */
+}
+#nav li{
+	  padding: 10px;
+	  background-color: #0073e6;
+
+}
+li a {
+  display: block;
+  color: #000;
+  padding: 8px 16px;
+  text-decoration: none;
+}
+header a:hover{
+  color:#cccccc;
+  font-weight:bold;
+}
+.contacts{
+	padding:10px;
+	  background:#0073e6;
+	margin-top:10%;
+	margin-left:25%;
+	margin-right:30%;
+
+}
+.contacts h1{
+	text-align:center;
+  width:50%;
+  margin:auto;
+  overflow:hidden;
+}
+.contacts li{
+	display:block;
+	 background:#e3e3b6;
+	text-align:center;
+  width:30%;
+  margin:auto;
+  overflow:hidden;
+}
+body a:hover{
+  color:#35424a;
+  font-weight:bold;
+}
+aside#sidebar{
+  float:right;
+  width:30%;
+
+}
+aside#sidebar .quote input, aside#sidebar .quote textarea{
+	margin-bottom:100px;
+  width:100%;
+  padding:20px;
+}
+.dark{
+  padding:20px;
+  width: 100%;
+  height: 100%;
+  background:#d1c9ff;
+  color:#ffffff;
+  margin-top:10px;
+  margin-bottom:10px;
+}
+.map{
+
+}
+footer{
+	float:bottom;
+  padding:20px;
+  margin-top:500px;
+  color:#ffffff;
+  background-color:#d1c9ff;
+  text-align: center;
+}

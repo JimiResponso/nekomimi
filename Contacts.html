@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Contact</title>
+	 <link rel="stylesheet" href="hatdogger.css">
+	 <style>
+      /* Set the size of the div element that contains the map */
+      #map {
+        height: 400px;  /* The height is 400 pixels */
+        width: 100%;  /* The width is the width of the web page */
+       }
+    </style>
+</head>
+<body>
+	<header>
+	<!-- Literal head -->
+	
+		<div id="branding">
+			<img id="Logo" src="bblogo.png">
+          	<h1 class="logoid">Busy Bus</h1>
+        </div>
+        <!-- Navigation Bar -->
+<div id="nav">
+<ul>
+  <li><a href="">Home</a></li>
+  <li><a href="">Input</a></li>
+  <li><a href="">Contacts</a></li>
+  <li><a href="">Trips</a></li>
+  <li><a href="">Costs</a></li>
+  <li><a href="">Profile</a></li>
+  	</div>
+  </header>
+</ul>
+<!-- links -->
+<div class="contacts">
+	<ul>
+	<h1>Contact us at </h1>
+	<li><a href="">Facebook</a></li>
+	<li><a href="">Twitter</a></li>
+	<li><a href="">Telephone</a></li>
+	</ul>
+	</div>
+  <aside id="sidebar">
+          <div class="dark">
+            <h3>Send us E-mail here</h3>
+            <form class="mail">
+  						<div>
+  							<label>Name</label><br>
+  							<input type="text" placeholder="Name">
+  						</div>
+  						<div>
+  							<label>Email</label><br>
+  							<input type="email" placeholder="Email Address">
+  						</div>
+  						<div>
+  							<label>Message</label><br>
+  							<textarea placeholder="Message"></textarea>
+  						</div>
+  						<button class="button_1" type="submit">Send</button>
+					</form>
+          </div>
+        </aside>
+    <!--The div element for the map -->
+    <div id="map"></div>
+    <script>
+// Initialize and add the map
+function initMap() {
+  // The location of Uluru
+  var uluru = {lat: -25.344, lng: 131.036};
+  // The map, centered at Uluru
+  var map = new google.maps.Map(
+      document.getElementById('map'), {zoom: 4, center: uluru});
+  // The marker, positioned at Uluru
+  var marker = new google.maps.Marker({position: uluru, map: map});
+}
+    </script>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap">
+    </script>
+</body>
+<footer>
+	BusyBus Prototype
+</footer>
+</html>
